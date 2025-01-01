@@ -17,7 +17,9 @@ This script solves this issue by automating the refresh of media files at their 
 Here are the scripts provided:
 |Action| How to Use |
 |--|--|
-|Refresh only selected clips  |Select the clips you want to refresh, then Workspace -> Scripts -> **RefreshSelectedClips**  |
-|Refresh all clips in bin  | Choose the bin you want to refresh, then Workspace -> Scripts -> **RefreshCurrentBin**  |
-|Refresh all clips in bin and sub-bins  | Choose the root bin you want to refresh, then Workspace -> Scripts -> **RefreshCurrentBinRecursive**  |
-|Refresh all clips project  | Workspace -> Scripts -> **RefreshAll**  |
+|Refresh only selected clips  |In the media pool, select the clips you want to refresh, then Workspace -> Scripts -> **RefreshSelectedClips**  |
+|Refresh all clips in bin  | In the media pool, choose the bin you want to refresh, then Workspace -> Scripts -> **RefreshCurrentBin**  |
+|Refresh all clips in bin and sub-bins  | In the media pool, choose the root bin you want to refresh, then Workspace -> Scripts -> **RefreshCurrentBinRecursive**  |
+|Refresh all clips in project  | Workspace -> Scripts -> **RefreshAll**  |
+
+You can optionally view how many clips are refreshed by the script via Workspace -> Console
