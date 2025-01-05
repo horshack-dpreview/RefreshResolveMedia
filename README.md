@@ -17,6 +17,7 @@ This script solves this issue by automating various workarounds that force Resol
 ## Relinking
 Non-automated method to relink clips - right-click on a clip in the media pool:
 ![enter image description here](https://raw.githubusercontent.com/horshack-dpreview/RefreshResolveMedia/refs/heads/main/doc/image_relink_menu.png)
+
 The first workaround automated by these scripts is to relink to the same files. This is the simplest and fastest method. When performed manually, Resolve prompts you for the directory of the selected files you want to relink to, using the most recent directory you navigated to previously in a Resolve dialog rather than the actual directory of the files you selected. That's the first nuisance.  The second nuisance is all the selected files must be in that same directory, so if you need to refresh files across multiple directories then you have to perform multiple, separate relink operations. This script automates this by automatically relinking to whatever the current path is for each file, allowing clips across multiple directories to be relinked in a single operation.
 
 This script provides multiple selection scopes for relinking, from most-specific to least:
@@ -33,6 +34,7 @@ You can optionally monitor what clips the script acts upon by opening the script
 ## Copying (Renaming) and Replacing
 Non-automated method to replace clips - right-click on a clip in the media pool:
 ![enter image description here](https://raw.githubusercontent.com/horshack-dpreview/RefreshResolveMedia/refs/heads/main/doc/image_replace_menu.png)
+
 The second workaround automated by these scripts is to copy (duplicate) the media file associated with a clip and perform a Replace Clip operation. This addresses Resolve's stickiest of the stale media problem, where it'll continue to use the stale version of a clip until the path+filename to that clip has changed regardless of which other workaround you use until you restart Resolve to clear its RAM cache. Here's a sample scenario:
 
  1. You add a still-image named `image-1.tif` to your Resolve project
